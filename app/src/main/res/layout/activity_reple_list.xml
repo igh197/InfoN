@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll_view"
+    tools:context=".RepleListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <!-- 여기에 margin을 추가 -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/black"
+            android:nestedScrollingEnabled="true"
+            tools:listitem="@layout/activity_reple_view" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" /> <!-- 여기에 margin을 추가 -->
+
+        <Button
+            android:id="@+id/writeReple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="댓글 쓰기"
+            android:layout_marginBottom="8dp" /> <!-- 여기에 margin을 추가 -->
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
